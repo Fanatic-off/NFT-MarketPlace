@@ -1,10 +1,10 @@
 body {
     background: rgba(43, 43, 43, 1);
     color: white;
-    padding: 20px 50px;
 }
 
-.layout{
+layout{
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,7 +14,7 @@ body {
 .layout-item{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 12px;
 }
 
 button{
@@ -26,4 +26,51 @@ button{
     gap: 12px;
     border-radius: 20px;
     background: var(--call-to-action, #A259FF);
+}
+
+main-block{
+    display: flex;
+    padding: 80px 195px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    align-self: stretch;
+}
+
+column{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    flex: 1 0 0;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+placeholder-footer{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--background-secondary, #3B3B3B);
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.grid{
+    display: grid;
+}
+
+.footer-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
 }

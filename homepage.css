@@ -1,0 +1,150 @@
+column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+collection{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+
+    button{
+        display: flex;
+        padding: 0px 30px;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        border-radius: 20px;
+        background:  #A259FF;
+    }
+}
+
+container{
+    width: 100%;
+    display: grid;
+    gap: 60px;
+}
+
+creator-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+creator-name{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+creator{   
+    border-radius: 20px;
+    background: #3B3B3B;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+avatar{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0;
+}
+
+description{
+    padding: 20px 0;
+    display: grid;
+    gap: 10px;
+}
+
+sales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+total{
+    color: #858584;
+}
+        
+headline{
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+categories{
+    
+}
+
+placeholder-footer{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 0px 0px 20px 20px;
+    background: var(--background-secondary, #3B3B3B);
+}
+
+trending-collection{
+    display: flex;
+    width: 1050px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.a-i-center{
+    align-items: center;
+}
+
+.flex-grow{
+    flex: 1 0 0;    
+}
+
+.layout-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.player{
+    height: 25px
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.grid{
+    display: grid;
+}
+
+.footer-row{
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    align-self: stretch;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+.gap-15{
+    gap: 15px;
+}
+

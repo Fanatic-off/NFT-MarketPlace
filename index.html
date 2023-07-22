@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="homepage.css">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <div>
-        <layout>
+        <header>
             <div class="layout-item">
                 <img src="./images/Storefront.svg"></img>
                 <div>NFT Marketplace</div>
@@ -22,17 +23,17 @@
                     Sign Up
                 </button>
             </div>
-        </layout>
+        </header>
 
         <main-block>
-            <column>
+            <column class="flex-grow flex-start">
                 <h1 class="capitalize">Discover digital art & Collect NFTs</h1>
                 <div class="capitalize">NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.</div>
                 <button>
                     <img src="/images/RocketLaunch.svg"></img>
                     Get Started
                 </button>
-                <div class="flex">
+                <div class="flex gap-30">
                     <div>
                         <h2>240k+ </h2>
                         <div>Total Sale</div>
@@ -50,7 +51,7 @@
             <div class="grid">
                 <img src="./images/Image Placeholder.png"></img>
                 <placeholder-footer>
-                    <column>
+                    <column class="flex-start">
                         <div>Space Walking</div>
                         <div class="footer-row">
                             <img src="./images/Avatar Placeholder.png"></img>
@@ -61,9 +62,239 @@
             </div>
         </main-block>
 
-        <main-block></main-block>
-        <main-block></main-block>
-        <main-block></main-block>
+        <main-block>
+            <container>
+                <headline>
+                    <column>
+                        <h2>Trending Collection</h2>
+                        <div>Checkout our weekly updated trending collection.</div>
+                    </column>
+                </headline>
+                <div class="flex gap-30">
+                    <column>
+                        <img src="./images/Primary Photo Placeholder.png"></img>
+                        <collection>
+                                <img src="./images/Cat Placeholder.png"></img>
+                                <img src="./images/Bear Placeholder.png"></img>
+                                <button>1025+</button>
+                        </collection>
+                        <column>
+                            <div>DSGN Animals</div>
+                            <div class="footer-row">
+                                <img class="player" src="./images/Avatar Mr Fox.png"></img>
+                                <div>MrFox</div>
+                            </div>
+                        </column>
+                    </column>
+
+                    <column>
+                        <img src="./images/Primary Photo Placeholder.png"></img>
+                        <collection>
+                                <img src="./images/Cat Placeholder.png"></img>
+                                <img src="./images/Bear Placeholder.png"></img>
+                                <button>1025+</button>
+                        </collection>
+                        <column>
+                            <div>DSGN Animals</div>
+                            <div class="footer-row">
+                                <img class="player" src="./images/Avatar Mr Fox.png"></img>
+                                <div>MrFox</div>
+                            </div>
+                        </column>
+                    </column>
+
+                    <column>
+                        <img src="./images/Primary Photo Placeholder.png"></img>
+                        <collection>
+                                <img src="./images/Cat Placeholder.png"></img>
+                                <img src="./images/Bear Placeholder.png"></img>
+                                <button>1025+</button>
+                        </collection>
+                        <column>
+                            <div>DSGN Animals</div>
+                            <div class="footer-row">
+                                <img class="player" src="./images/Avatar Mr Fox.png"></img>
+                                <div>MrFox</div>
+                            </div>
+                        </column>
+                    </column>
+                </div>
+            </container>
+        </main-block>
+
+        <main-block>
+            <container>
+                <headline>
+                    <column>
+                        <h2>Top creators</h2>
+                        <div>Checkout Top Rated Creators on the NFT Marketplace</div>
+                    </column>
+                    <button>
+                        <img src="/images/RocketLaunch.svg"></img>
+                        View Rankings
+                    </button>
+                </headline>
+                
+                <creator-list>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Keepitreal.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Keepitreal</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/DigiLab.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>DigiLab</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/GravityOne.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>GravityOne</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Juanie.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Juanie</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/BlueWhale.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>BlueWhale</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Mr Fox.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Mr Fox</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Shroomie.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Shroomie</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Robotica.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Robotica</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/RustyRobot.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>RustyRobot</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Animakid.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Animakid</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Dotgu.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Dotgu</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                    <creator>
+                        <avatar>
+                            <img src="./images/Ghiblier.png"></img>
+                        </avatar>
+                        <description>
+                            <creator-name>Ghiblier</creator-name>
+                            <sales>
+                                <total>Total Sales:</total>
+                                <div>34.53 ETH</div>
+                            </sales>
+                        </description>
+                    </creator>
+                </creator-list>
+            </container>
+        </main-block>
+        
+        <main-block>
+            <container>                
+                <headline>
+                    <h2>Browse Categories</h2>
+                </headline>
+
+                <categories>
+
+                </categories>
+            </container>
+        </main-block>
         <main-block></main-block>
     </div>
     

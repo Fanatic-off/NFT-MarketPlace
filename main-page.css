@@ -1,0 +1,294 @@
+body {
+  background: rgb(43, 43, 43);
+  color: white;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .layout-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+button {
+  display: flex;
+  min-height: 60px;
+  padding: 0px 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  background: #A259FF;
+  white-space: nowrap;
+}
+
+column {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+footer-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+
+main-block {
+  display: flex;
+  padding: 80px 195px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 0 auto;
+}
+main-block container {
+  width: 100%;
+  display: grid;
+  gap: 60px;
+}
+main-block container headline {
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.footer {
+  background: #3B3B3B;
+}
+
+collection-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 30px;
+}
+collection-list collection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+}
+
+creator-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+creator-list creator {
+  border-radius: 20px;
+  background: #3B3B3B;
+  display: grid;
+  width: 70%;
+  padding: 0 20px;
+  justify-content: center;
+  align-items: center;
+}
+creator-list creator avatar {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+creator-list creator description {
+  padding: 20px 0;
+  display: grid;
+  gap: 10px;
+}
+creator-list creator description sales {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+creator-list creator description sales total {
+  color: #858584;
+}
+creator-list creator description name {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+category-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+category-list category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background: #3B3B3B;
+  overflow: hidden;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+category-list category category-image {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+category-list category category-image .secondary-picture {
+  padding: 70px;
+}
+category-list category wrapper {
+  position: absolute;
+  display: flex;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: blur(7.5px);
+          backdrop-filter: blur(7.5px);
+  width: 100%;
+}
+category-list category .category-button {
+  padding: 20px 30px 25px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 140%;
+  text-transform: capitalize;
+}
+
+placeholder-footer {
+  display: flex;
+  padding: 20px;
+  gap: 10px;
+  border-radius: 0px 0px 20px 20px;
+  background: #3B3B3B;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  align-self: stretch;
+  color: #CCC;
+}
+footer info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+}
+footer info main-info {
+  color: white;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+}
+footer info info {
+  display: grid;
+  gap: 20px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+footer info marketplace {
+  display: grid;
+  gap: 30px;
+}
+footer info marketplace community {
+  display: grid;
+  gap: 15px;
+}
+footer info marketplace community icons {
+  display: flex;
+  gap: 10px;
+}
+footer info explore {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 25px;
+}
+footer info digest {
+  display: grid;
+  gap: 25px;
+}
+footer info digest email-form {
+  border-radius: 20px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer info digest email-form span {
+  padding: 0 20px;
+  color: black;
+}
+footer info digest email-form button {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+}
+footer footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 100%;
+}
+footer footer-info divider {
+  height: 1px;
+  background: #858584;
+  width: 100%;
+}
+
+trending-collection {
+  display: flex;
+  width: 1050px;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.flex-start {
+  align-items: flex-start;
+}
+
+.flex-grow {
+  flex: 1 0 0;
+}
+
+.flex {
+  display: flex;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.gap-30 {
+  gap: 30px;
+}
+
+.player {
+  width: 25px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.grid {
+  display: grid;
+}
+
+.gap-15 {
+  gap: 15px;
+}/*# sourceMappingURL=main-page.css.map */

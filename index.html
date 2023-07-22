@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NFT Marketplace</title>
-    <link rel="stylesheet" href="homepage.css">
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main-page.css">
 </head>
 <body>
-    <div>
+    <!-- <div> -->
         <header>
             <div class="layout-item">
                 <img src="./images/Storefront.svg"></img>
@@ -53,10 +52,10 @@
                 <placeholder-footer>
                     <column class="flex-start">
                         <div>Space Walking</div>
-                        <div class="footer-row">
-                            <img src="./images/Avatar Placeholder.png"></img>
+                        <footer-row>
+                            <img class="player" src="./images/Avatar Placeholder.png"></img>
                             <div>Animakid</div>
-                        </div>
+                        </footer-row>
                     </column>
                 </placeholder-footer>
             </div>
@@ -70,7 +69,7 @@
                         <div>Checkout our weekly updated trending collection.</div>
                     </column>
                 </headline>
-                <div class="flex gap-30">
+                <collection-list>
                     <column>
                         <img src="./images/Primary Photo Placeholder.png"></img>
                         <collection>
@@ -80,10 +79,10 @@
                         </collection>
                         <column>
                             <div>DSGN Animals</div>
-                            <div class="footer-row">
+                            <footer-row>
                                 <img class="player" src="./images/Avatar Mr Fox.png"></img>
                                 <div>MrFox</div>
-                            </div>
+                            </footer-row>
                         </column>
                     </column>
 
@@ -96,10 +95,10 @@
                         </collection>
                         <column>
                             <div>DSGN Animals</div>
-                            <div class="footer-row">
+                            <footer-row>
                                 <img class="player" src="./images/Avatar Mr Fox.png"></img>
                                 <div>MrFox</div>
-                            </div>
+                            </footer-row>
                         </column>
                     </column>
 
@@ -112,13 +111,13 @@
                         </collection>
                         <column>
                             <div>DSGN Animals</div>
-                            <div class="footer-row">
+                            <footer-row>
                                 <img class="player" src="./images/Avatar Mr Fox.png"></img>
                                 <div>MrFox</div>
-                            </div>
+                            </footer-row>
                         </column>
                     </column>
-                </div>
+                </collection-list>
             </container>
         </main-block>
 
@@ -290,13 +289,135 @@
                     <h2>Browse Categories</h2>
                 </headline>
 
-                <categories>
+                <category-list>
+                    <category>
+                        <category-image>
+                            <img src="./images/Art.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/PaintBrush.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Art</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Collectibles.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/Swatches.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Collectibles</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Music.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/MusicNotes.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Music</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Photography.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/Camera.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Photography</div>
+                    </category>
 
-                </categories>
+                    <category>
+                        <category-image>
+                            <img src="./images/Video.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/VideoCamera.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Video</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Utility.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/MagicWand.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Utility</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Sport.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/Basketball.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Sport</div>
+                    </category>
+                    <category>
+                        <category-image>
+                            <img src="./images/Virtual Worlds.png"></img>
+                            <wrapper>
+                                <img class="secondary-picture" src="./images/Planet.svg"></img>
+                            </wrapper>
+                        </category-image>
+                        <div class="category-button">Virtual Worlds</div>
+                    </category>
+                </category-list>
             </container>
         </main-block>
-        <main-block></main-block>
-    </div>
+
+        <main-block class="footer">
+            <container>
+                <footer>
+                    <info>
+                        <marketplace>
+                            <footer-row>
+                                <img src="./images/Storefront.svg"></img>
+                                <main-info>NFT Marketplace</main-info>
+                            </footer-row>
+                            <info>
+                                <div>NFT marketplace UI created<br>with Anima for Figma.</div>
+                                <community>
+                                    <span>Join our community</span>
+                                    <icons>
+                                        <img src="./images/DiscordLogo.svg"></img>
+                                        <img src="./images/YoutubeLogo.svg"></img>
+                                        <img src="./images/TwitterLogo.svg"></img>
+                                        <img src="./images/InstagramLogo.svg"></img>
+                                    </logo-list>
+                                </community>
+                            </info>
+                        </marketplace>
+                        
+                        <explore>
+                            <main-info>Explore</main-info>
+                            <info>
+                                <span>Marketplace</span>
+                                <span>Rankings</span>
+                                <span>Connect a wallet</span>
+                            </info>
+                        </explore>
+
+                        <digest>
+                            <main-info>Join our weekly digest</main-info>
+                            <info>
+                                <span>Get exclusive promotions & updates straight to your inbox.</span>
+                                <email-form>
+                                    <span>Enter your email here</span>
+                                    <button>Subscribe</button>
+                                </email-form>
+                            </info>
+                        </digest>
+                    </info>
+                    <footer-info>
+                        <divider></divider>
+                        <span>Ⓒ NFT Market. Use this template freely.</span>
+                    </footer-info>
+                </footer>
+            </container>
+        </main-block>
+    <!-- </div> -->
     
 </body>
 </html>

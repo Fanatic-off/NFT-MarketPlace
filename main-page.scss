@@ -1,0 +1,325 @@
+body {
+    background: rgba(43, 43, 43, 1);
+    color: white;
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .layout-item{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+button{
+    display: flex;
+    min-height: 60px;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    border-radius: 20px;
+    background:  #A259FF;
+    white-space: nowrap;
+}
+
+column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+}
+
+footer-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    align-self: stretch;
+}
+
+main-block{
+    display: flex;
+    padding: 80px 195px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+
+    container{
+        width: 100%;
+        display: grid;
+        gap: 60px;
+        
+        headline {
+            display: inline-flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+    }
+}
+
+.footer{
+    background: #3B3B3B;
+}
+
+collection-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+
+    collection{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+creator-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+    
+    creator{   
+        border-radius: 20px;
+        background: #3B3B3B;
+        display: grid;
+        width: 70%;
+        padding: 0 20px;
+        justify-content: center;
+        align-items: center;
+        
+        avatar{
+            display: flex;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        
+        description{
+            padding: 20px 0;
+            display: grid;
+            gap: 10px;
+            
+            sales{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                
+                total{
+                    color: #858584;
+                }
+            }
+            
+            name{
+                text-align: center;
+                font-size: 22px;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+category-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    
+    category{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 20px;
+        background: #3B3B3B;
+        overflow: hidden;
+        width: fit-content;
+        
+        category-image{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .secondary-picture{
+                padding: 70px;
+            }
+        }
+        
+        wrapper{
+            position: absolute;
+            display: flex;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(7.5px);
+            width: 100%;
+        }
+        
+        .category-button{
+            padding: 20px 30px 25px 30px;
+            font-size: 22px;
+            font-weight: 600;
+            line-height: 140%;
+            text-transform: capitalize;
+        }
+    }
+}
+
+placeholder-footer{
+    display: flex;
+    padding: 20px;
+    gap: 10px;
+    border-radius: 0px 0px 20px 20px;
+    background: #3B3B3B;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    align-self: stretch;
+    color: #CCC;
+
+    info{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+
+        main-info{
+            color: white;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 160%; 
+        }
+
+        info{
+            display: grid;
+            gap: 20px;
+
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%; 
+        }
+
+        marketplace{
+            display: grid;
+            gap: 30px;
+
+            community{
+                display: grid;
+                gap: 15px;
+                
+                icons{
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+        }
+        
+        explore{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 25px;
+        }
+
+        digest{
+            display: grid;
+            gap: 25px;
+
+            email-form{ 
+                border-radius: 20px;
+                background:white;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                span{
+                    padding: 0 20px;
+                    color: black;
+                }
+
+                button{
+                    color: white;
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    footer-info{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        width: 100%;
+
+        divider{
+            height: 1px;
+            background: #858584;
+            width: 100%;
+        }
+    }
+}
+
+trending-collection{
+    display: flex;
+    width: 1050px;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.flex-grow{
+    flex: 1 0 0;    
+}
+
+
+.flex{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.gap-30{
+    gap: 30px;
+}
+
+.player{
+    width: 25px
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+
+.grid{
+    display: grid;
+}
+
+
+
+.gap-15{
+    gap: 15px;
+}

@@ -14,10 +14,11 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header .layout-item {
+header layout-item {
   display: flex;
   align-items: center;
   gap: 12px;
+  white-space: nowrap;
 }
 
 button {
@@ -64,6 +65,14 @@ main-block container headline {
   width: 100%;
   justify-content: space-between;
   align-items: flex-end;
+}
+
+.mushroom {
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
 .footer {
@@ -126,6 +135,8 @@ category-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
+  justify-items: center;
+  align-items: start;
 }
 category-list category {
   display: flex;

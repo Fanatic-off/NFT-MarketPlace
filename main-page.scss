@@ -4,10 +4,6 @@ body {
     margin: 0;
 }
 
-img{
-    width: 100%;
-}
-
 header{
     padding: 20px 50px;
     display: flex;
@@ -38,7 +34,6 @@ column{
     display: flex;
     flex-direction: column;
     gap: 30px;
-    width: 100%;
 }
 
 footer-row {
@@ -51,42 +46,57 @@ footer-row {
 main-block{
     display: flex;
     padding: 80px 195px;
-    justify-content: center;
     align-items: center;
     gap: 30px;
     margin: 0 auto;
 
+    h1 {
+        font-size: 67px;
+        line-height: 74px;
+        text-transform: capitalize;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    statistics {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 30px;
+        font-size: 24px;
+        line-height: 38px;
+        align-items: flex-start;
+        align-self: stretch;
+    }    
+
     container{
-        width: 100%;
         display: grid;
         gap: 60px;
+        width: 100%;
         
         headline {
             display: inline-flex;
-            width: 100%;
             justify-content: space-between;
             align-items: flex-end;
         }
     }
-
 }
 
 .mushroom{
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    padding: 0;
     margin: 0;
 }
 
 .footer{
     background: #3B3B3B;
+    padding: 40px 115px;
 }
 
 collection-list{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     gap: 30px;
 
     collection{
@@ -100,15 +110,12 @@ creator-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    justify-items: center;
-    align-items: center;
     
     creator{   
         border-radius: 20px;
         background: #3B3B3B;
         display: grid;
-        width: 70%;
-        padding: 0 20px;
+        width: 100%;
         justify-content: center;
         align-items: center;
         
@@ -127,6 +134,7 @@ creator-list{
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 gap: 10px;
+                white-space: nowrap;
                 
                 total{
                     color: #858584;
@@ -147,7 +155,6 @@ category-list{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     justify-items: center;
-    align-items: start;
     
     category{
         display: flex;
@@ -199,20 +206,19 @@ placeholder-footer{
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 30px;
-    width: 100%;
-    align-self: stretch;
     color: #CCC;
+    width: 90%;
 
     info{
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        width: 100%;
+        gap: 30px;
 
         main-info{
             color: white;
+            white-space: nowrap;
             font-size: 22px;
             font-style: normal;
             font-weight: 700;
@@ -291,21 +297,13 @@ footer{
     }
 }
 
-trending-collection{
-    display: flex;
-    width: 1050px;
-    align-items: flex-start;
-    gap: 30px;
-}
-
 .flex-start{
     align-items: flex-start;
 }
 
 .flex-grow{
-    flex: 1 0 0;    
+    flex: 1 0 0;
 }
-
 
 .flex{
     display: flex;
@@ -325,13 +323,10 @@ trending-collection{
     text-transform: capitalize;
 }
 
-
 .grid{
     display: grid;
 }
 
-
-
-.gap-15{
-    gap: 15px;
+.width-100{
+    width: 100%;
 }

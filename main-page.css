@@ -48,6 +48,7 @@ main-block {
   align-items: center;
   gap: 30px;
   margin: 0 auto;
+  max-width: 1500px;
 }
 main-block h1 {
   font-size: 67px;
@@ -85,7 +86,6 @@ main-block container headline {
   padding: 0;
   height: 100vh;
   overflow: hidden;
-  margin: 0;
 }
 
 .footer {
@@ -94,9 +94,8 @@ main-block container headline {
 }
 
 collection-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
 }
 collection-list collection {
@@ -156,8 +155,7 @@ category-list category {
   border-radius: 20px;
   background: #3B3B3B;
   overflow: hidden;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: -webkit-fill-available;
 }
 category-list category category-image {
   position: relative;

@@ -52,6 +52,7 @@ main-block{
     align-items: center;
     gap: 30px;
     margin: 0 auto;
+    max-width: 1500px;
 
     h1 {
         font-size: 67px;
@@ -94,7 +95,6 @@ main-block{
     padding: 0;
     height: 100vh;
     overflow: hidden;
-    margin: 0;
 }
 
 .footer{
@@ -103,9 +103,8 @@ main-block{
 }
 
 collection-list{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
 
     collection{
@@ -172,7 +171,7 @@ category-list{
         border-radius: 20px;
         background: $background-color;
         overflow: hidden;
-        width: fit-content;
+        width: -webkit-fill-available;
         
         category-image{
             position: relative;

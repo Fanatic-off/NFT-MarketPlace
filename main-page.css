@@ -1,6 +1,7 @@
 body {
   background: rgb(43, 43, 43);
   color: white;
+  font-family: "Work Sans", sans-serif;
   margin: 0;
 }
 
@@ -15,6 +16,9 @@ header layout-item {
   align-items: center;
   gap: 12px;
   white-space: nowrap;
+}
+header layout-item div {
+  padding: 0 20px;
 }
 
 button {
@@ -48,7 +52,6 @@ main-block {
   align-items: center;
   gap: 30px;
   margin: 0 auto;
-  max-width: 1500px;
 }
 main-block h1 {
   font-size: 67px;
@@ -66,6 +69,9 @@ main-block statistics {
   align-items: flex-start;
   align-self: stretch;
 }
+main-block statistics h2 {
+  font-family: "Space Mono", monospace;
+}
 main-block container {
   display: grid;
   gap: 60px;
@@ -80,6 +86,9 @@ main-block container headline {
   display: inline-flex;
   justify-content: space-between;
   align-items: flex-end;
+}
+main-block span {
+  text-transform: capitalize;
 }
 
 .mushroom {
@@ -155,7 +164,6 @@ category-list category {
   border-radius: 20px;
   background: #3B3B3B;
   overflow: hidden;
-  width: -webkit-fill-available;
 }
 category-list category category-image {
   position: relative;
@@ -287,10 +295,6 @@ footer footer-info divider {
 
 .player {
   width: 25px;
-}
-
-.capitalize {
-  text-transform: capitalize;
 }
 
 .grid {

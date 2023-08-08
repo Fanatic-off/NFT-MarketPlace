@@ -10,11 +10,18 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
 header{
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    white-space: nowrap;
     
     layout-item{
         display: flex;
@@ -38,6 +45,13 @@ button{
     border-radius: 20px;
     background: $btn-color;
     white-space: nowrap;
+}
+
+.fill {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    height: 24px;
 }
 
 column{
@@ -113,7 +127,7 @@ main-block{
 
 .footer{
     background: $background-color;
-    padding: 40px 115px;
+    display: flow;
 }
 
 collection-list{
@@ -133,22 +147,21 @@ creator-list{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     
-    creator{   
+    creator{
         border-radius: 20px;
         background: $background-color;
+        padding: 20px;
         display: grid;
-        width: 100%;
+        gap: 20px;
         justify-content: center;
         align-items: center;
         
         avatar{
             display: flex;
             justify-content: center;
-            padding: 20px 0;
         }
         
         description{
-            padding: 20px 0;
             display: grid;
             gap: 10px;
             
@@ -176,7 +189,6 @@ category-list{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
-    justify-items: center;
     
     category{
         display: flex;
@@ -191,6 +203,11 @@ category-list{
             display: flex;
             justify-content: center;
             align-items: center;
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
             
             .secondary-picture{
                 padding: 70px;
@@ -229,7 +246,6 @@ footer{
     flex-direction: column;
     gap: 30px;
     color: #CCC;
-    width: 90%;
 
     info{
         display: flex;
@@ -342,4 +358,98 @@ footer{
 
 .width-100{
     width: 100%;
+}
+
+@media (max-width: 850px) {
+    .desktop-only {
+      display: none !important;
+    }
+    
+    body {
+        overflow-x: hidden;
+    }
+
+    header{
+        layout-item {
+            position: absolute;
+            flex-direction: column;
+            right: 0;
+            top: 54px;
+            background-color: $background-color;
+            align-items: flex-end;
+            padding: 30px;
+            width: 100%;
+            transition: all .4s ease;
+            transform: translateX(100%);
+            
+            &.visible {
+                transform: translateX(0);
+            }
+        }
+    }
+        
+    main-block {
+        display: flex;
+        padding: 40px 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        .grid{
+            width: 100%;
+
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    collection-list{
+        grid-template-columns: 1fr;
+        
+        column:not(:first-child){
+            display: none;
+        }
+
+        collection{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    creator-list {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+
+        creator:nth-child(n+6){
+            display: none;
+        }
+
+        creator{
+            display: flex;
+            justify-content: flex-start;
+        }
+    }
+
+    category-list{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .mushroom{
+        height: 100%;
+    }
+
+    .footer{
+        info{
+            flex-direction: column;
+        }
+    }
+}
+
+@media (min-width: 851px) {
+    .mobile-only {
+      display: none !important;
+    }
 }

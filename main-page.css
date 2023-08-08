@@ -5,11 +5,18 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
 header {
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 header layout-item {
   display: flex;
@@ -31,6 +38,13 @@ button {
   border-radius: 20px;
   background: #A259FF;
   white-space: nowrap;
+}
+
+.fill {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  height: 24px;
 }
 
 column {
@@ -99,7 +113,7 @@ main-block span {
 
 .footer {
   background: #3B3B3B;
-  padding: 40px 115px;
+  display: flow;
 }
 
 collection-list {
@@ -121,18 +135,17 @@ creator-list {
 creator-list creator {
   border-radius: 20px;
   background: #3B3B3B;
+  padding: 20px;
   display: grid;
-  width: 100%;
+  gap: 20px;
   justify-content: center;
   align-items: center;
 }
 creator-list creator avatar {
   display: flex;
   justify-content: center;
-  padding: 20px 0;
 }
 creator-list creator description {
-  padding: 20px 0;
   display: grid;
   gap: 10px;
 }
@@ -155,7 +168,6 @@ category-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 30px;
-  justify-items: center;
 }
 category-list category {
   display: flex;
@@ -170,6 +182,10 @@ category-list category category-image {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+}
+category-list category category-image img {
+  width: 100%;
 }
 category-list category category-image .secondary-picture {
   padding: 70px;
@@ -204,7 +220,6 @@ footer {
   flex-direction: column;
   gap: 30px;
   color: #CCC;
-  width: 90%;
 }
 footer info {
   display: flex;
@@ -303,4 +318,76 @@ footer footer-info divider {
 
 .width-100 {
   width: 100%;
+}
+
+@media (max-width: 850px) {
+  .desktop-only {
+    display: none !important;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  header layout-item {
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 54px;
+    background-color: #3B3B3B;
+    align-items: flex-end;
+    padding: 30px;
+    width: 100%;
+    transition: all 0.4s ease;
+    transform: translateX(100%);
+  }
+  header layout-item.visible {
+    transform: translateX(0);
+  }
+  main-block {
+    display: flex;
+    padding: 40px 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  main-block .grid {
+    width: 100%;
+  }
+  main-block .grid img {
+    width: 100%;
+  }
+  collection-list {
+    grid-template-columns: 1fr;
+  }
+  collection-list column:not(:first-child) {
+    display: none;
+  }
+  collection-list collection img {
+    width: 100%;
+  }
+  creator-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  creator-list creator:nth-child(n+6) {
+    display: none;
+  }
+  creator-list creator {
+    display: flex;
+    justify-content: flex-start;
+  }
+  category-list {
+    grid-template-columns: 1fr 1fr;
+  }
+  .mushroom {
+    height: 100%;
+  }
+  .footer info {
+    flex-direction: column;
+  }
+}
+@media (min-width: 851px) {
+  .mobile-only {
+    display: none !important;
+  }
 }/*# sourceMappingURL=main-page.css.map */
